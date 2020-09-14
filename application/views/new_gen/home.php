@@ -2,37 +2,82 @@
 <html>
 <head>
 	<title>InternationalAwards</title>
-	<script src="<?=base_url()?>../js/script_countdown.js"></script>
-	<?php $this->load->view('new_gen/_config') ?>
+	<?php $this->load->view('_config') ?>
 </head>
-<body style="height: 100%; background-image: url('<?=base_url()?>../image/bg_new_gen.png');">
+<body>
 	<?php include '_menu.php'?>
-	<div class="row box_main_countdown">
-		<div class="col">
+	<div class="container-fluid home_page">
+		<div class="row">
+			<div class="col p-0">
+				<div class="banner">
+					<div class="slides">
+						<img src="<?=base_url()?>../image/obj/banner.png" alt="">
+						<img src="<?=base_url()?>../image/obj/banner.png" alt="">
+						<img src="<?=base_url()?>../image/obj/banner.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col p-0">
+				<div class="text_banner pt-5">
+					การประกวดสิ่งประดิษฐ์และนวัตกรรม<br>
+					Thailand New Gen Inventors Award 2021
+				</div>
+			</div>
+
+			
+		</div>
+		<div class="w_1024">
 			<div class="row">
+				<div class="col-4">
+					<div class="poster">
+						<img src="<?=base_url()?>../image/obj/poster.png" alt="">
+					</div>
+				</div>
 				<div class="col">
-					<div class="box_countdown p-0">
-						<div class="row">
-							<div class="col-3 box_cd_num" id="day"></div>
-							<div class="col-3 box_cd_num" id="hours"></div>
-							<div class="col-3 box_cd_num" id="mins"></div>
-							<div class="col-3 box_cd_num" id="sec"></div>
+					<div class="row">
+						<div class="col p-0">
+							<div class="video">
+								<iframe style="overflow:hidden;height:40vh;width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/6nM1lwBB9lY?autoplay=1controls=0&amp;start=35" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
 						</div>
-						<div class="row">
-							<div class="col-3 box_cd_txt">DAY</div>
-							<div class="col-3 box_cd_txt">HOURS</div>
-							<div class="col-3 box_cd_txt">MINS</div>
-							<div class="col-3 box_cd_txt">SECONDS</div>
+					</div>
+					<div class="row">
+						<div class="col btn_login">
+							
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row mt-3">
-				<div class="col-12 mx-auto text-center" style="font-size:2rem; font-weight: bold;">COMING SOON</div>
-				<div class="col-12 mx-auto text-center" style="font-size:2rem; font-weight: bold;">I-New Gen Awards</div>
-				<div class="col-12 mx-auto text-center" style="font-size:1.5rem; font-weight: lighter;">Please visit us after days</div>
-			</div>
 		</div>
+		<?php include '_footer.php'?>
 	</div>
 </body>
 </html>
+<script>
+	$('.slides').slick({
+		dots: false,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		arrows:false
+	});
+	$(document).ready(function() {
+		
+		$('.image_coun').each(function() {
+			var screenImage = $(this);
+			var theImage = new Image();
+			theImage.src = screenImage.attr("src");
+			$(theImage).one('load', function(event) {
+				var imageWidth = theImage.width;
+				var imageHeight = theImage.height;
+				if(imageHeight>imageWidth){
+					$(screenImage).css({
+						width: 'auto',
+						height: '100%'
+					});
+				}
+			});
+		});
+	});
+</script>

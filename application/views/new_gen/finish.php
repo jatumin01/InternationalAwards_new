@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Dashboard | InternationalAwards</title>
-	<?php $this->load->view('new_gen/_config') ?>
+	<?php $this->load->view('_config') ?>
 </head>
 <body style="height: 100%;">
 	<?php include '_menu.php'?>
@@ -15,17 +15,12 @@
 				</div>
 				<div class="row mt-3">
 					<div class="col text-center">
-						<img src="<?=base_url()?>../image/obj/robot_newgen_finish.png" alt="">
+						<img src="<?=base_url()?>../image/obj/robot_finish.png" alt="">
 					</div>
 				</div>
 				<div class="row mt-5">
 					<div class="col-3 mx-auto">
-						<a href="<?=base_url()?>home_newgen/submission"><div class="btn_green">SUBMIT NEW PROJECT</div></a>
-					</div>
-				</div>
-				<div class="row mt-3">
-					<div class="col-3 mx-auto">
-						<a href="<?=base_url()?>home_newgen/Dashboard"><div class="btn_green bg_black">BACK TO DASHBOARD</div></a>
+						<a href="<?=base_url()?>home/Dashboard"><div class="btn_green">BACK TO DASHBOARD</div></a>
 					</div>
 				</div>
 			</div>

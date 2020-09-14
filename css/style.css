@@ -2,37 +2,24 @@ html{
 	scroll-behavior: smooth;
 }
 body{
-	font-family: 'DIN Pro';
-	font-size: 18px;
+	font-family: 'th_sarabun_newregular';
+	font-size: 24px;
+	line-height: auto;
 	height: 100%;
-	background-image: url('../image/obj/bg.png');
+	/*background-image: url('../image/obj/bg.png');*/
 	background-attachment: fixed;
 	background-size: 100% 100%;
 	color: #fff;
 }
-pre{
+.term{
 	font-family: 'DIN Pro';
-	font-size: 100%;
+	font-size: 1.0rem;
 }
 a:hover{
 	text-decoration: none;
 }
 p{
 	margin: 0;
-}
-button:focus ,div:focus{
-	border: none;
-	outline:none;
-}
-ul li{
-	list-style-type: none;
-}
-.btn{
-	cursor: pointer;
-}
-
-.swal-modal{
-	padding-bottom: 30px;
 }
 .w_1024{
 	width: 1024px;
@@ -111,7 +98,6 @@ ul li{
 	font-weight: bold;
 	color: #fff;
 	transition: 0.3s;
-	cursor: pointer;
 }
 .btn_green:hover{
 	background: #f1f1f1;
@@ -146,13 +132,25 @@ ul li{
 .project_image img{
 	width: 100%;
 }
-
+.text_banner{
+	width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    font-weight: bold;
+}
+}
 
 /*new_verion*/
 
 .banner{
 	width: 100%;
-	height: 870px;
+	height: 855px;
+	overflow: hidden;
 }
 .slides img{
 	width: 100%;
@@ -169,12 +167,9 @@ ul li{
 	width: 100%;
 }
 .bar_menu{
-	width: 60%;
+	width: 100%;
 	height: 60px;
-	background-image: linear-gradient(to left, rgba(0,0,0,0.6) , rgba(0,0,0,0));
-	position: absolute;
-	top: 50px;
-	right: 0;
+	background-color: #22222B;
 	z-index: 100;
 	display: flex;
 	padding: 10px 30px;
@@ -198,50 +193,31 @@ ul li{
 	box-shadow: 0px 0px 10px -4px rgba(255,255,255,1);
 	transition: 0.3s;
 }
-.box.visit{
-	background-image: url('../image/obj/BtnVisit.png');
-}
-.box.submit{
-	background-image: url('../image/obj/BtnSubmit.png');
-}
-.box.gold{
-	background-image: url('../image/obj/BgGold.png');
-}
-.box.silver{
-	background-image: url('../image/obj/BgSilver.png');
-}
-.box.bronze{
-	background-image: url('../image/obj/BgBronze.png');
-}
-.box.other{
-	background-image: url('../image/obj/BgGeneral.png');
-}
 .visit_submition .box .text{
 	color: #fff;
 	font-size: 2.5rem;
 	font-weight: bold;
 	text-align: center;
 }
+.home_page .poster img{
+	width: 100%;
+}
+.home_page .btn_login{
+	height: 100px;
+	background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+}
 .btn_blue{
 	padding: 5px 30px;
-	background-color: #2EA4CE;
+	background-color: #263092 ;
 	color: #fff;
 	border-radius: 20px;
 	margin-right: 20px;
 	border: none;
-	cursor: pointer;
-	transition: 0.3s;
-}
-.btn_blue:hover{
-	color: #2EA4CE;
-	background-color: #f1f1f1;
-	transition: 0.3s;
 }
 .btn_project{
 	padding: 5px 30px;
 	color: #fff;
 	margin-right: 20px;
-	cursor: pointer;
 }
 .btn_project .line{
 	border-bottom: 2px solid #fff;
@@ -275,9 +251,20 @@ ul li{
 	padding: 10px;
 }
 .footer{
-	background-image: url('../image/obj/footer.png');
-	height: 315px;
+	height: 380px;
 	color: #fff;
+}
+.footer_bar{
+	right: 0;
+    bottom: 0;
+    left: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #22222B;
+	z-index: 100;
+	display: flex;
+	padding: 10px 30px;
+	justify-content: flex-end;
 }
 .about_detail img{
 	width: 100%;
@@ -363,6 +350,9 @@ ul li{
 	transition: 0.3s;
 	cursor: pointer;
 }
+.project_detail{
+	color: black;
+}
 .project_detail .line{
 	margin-left: 0;
 }
@@ -396,7 +386,6 @@ ul li{
 	background: #fff;
 	color: #000;
 	padding: 100px;
-	background-image: url('../image/obj/bg_signin.png');
 	background-size: 100%;
 	background-position :center;
 	background-repeat: no-repeat; 
@@ -410,23 +399,10 @@ ul li{
 	transition: 0.3s;
 }
 .deparment .box{
-	height: 70px;
+	height: 180px;
+	background-image: url('../image/obj/deparment.png');
 	background-size: 100%;
 	transition: 0.3s;
-}
-.deparment .text{
-	height: 90px;
-	text-align: center;
-	padding:10px 10px;
-}
-.deparment_box_{
-	transition: 0.3s;
-}
-.deparment_box{
-	overflow: hidden;
-}
-.deparment_box img{
-	width: 100%;
 }
 .h_shadow:hover{
 	-webkit-box-shadow: 0px 0px 10px -4px rgba(255,255,255,1);
@@ -437,6 +413,7 @@ ul li{
 }
 .deparment .box .text{
 	height: 180px;
+	background-image: url('../image/obj/deparment.png');
 	background-size: 100%;
 	font-size: 2rem;
 	display: flex;
@@ -450,15 +427,44 @@ ul li{
 	background-color: #fff;
 	display: inline-flex;
 	overflow: hidden;
-	position: relative;
 }
 .category .category_box{
 	transition: 0.3s;
 }
 .category .box{
 	width: 160px;
-	height: auto;
+	height: 200px;
 	margin: 10px 10px;
+}
+.category .box_detail_category{
+	width: 100%;
+	height: 160px;
+	background-color: red;
+	background-image: url('../image/obj/category_detail.png');
+	background-size: 100%;
+	background-position: center;
+	position: absolute;
+	top: 10px;
+	border-radius: 80px;
+	transition: 0.4s;
+	z-index: 2;
+	transform-origin: left;
+	transform: scaleX(0);
+	overflow: hidden;
+	padding: 58px;
+}
+.box_detail_category .btn{
+	padding: 10px 20px;
+	background: #000;
+	opacity: 0.8;
+	border-radius: 30px;
+	color: #fff;
+	font-weight: bold;
+
+}
+.box_detail_category .btn:hover{
+	opacity: 1;
+	transition: 0.3s;
 }
 .terms_condition {
 	padding: 100px;
@@ -528,38 +534,22 @@ ul li{
 }
 .submission_head .bg_black{
 	background-color: rgba(0, 0, 0, 0.9);
-	width: 100vw;
-	height: 100vh;
-	position: fixed;
-	top: 0;
-	z-index: 100;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .submission_head .survey{
 	display: block;
-	width: 70%;
-	color: #000;
-	border-radius: 10px;
-	background: #fff;
-	padding: 1px 50px;
-	position: relative;
-}
-.survey .close_{
-	width: 20px;
-	height: 20px;
-	position: absolute;
-	top: 10px;
-	right: 20px;
-	cursor: pointer;
-	opacity: 0.8;
-}
-.survey .close_:hover{
-	opacity: 1;
-}
-.survey .close_ img{
-	width: 100%;
+    width: 70%;
+    color: #000;
+    border-radius: 10px;
+    background: #fff;
+    padding: 1px 50px;
 }
 .your_project{
 	background-color: #fff;
@@ -575,220 +565,11 @@ ul li{
 	color: #666;
 	font-size: 0.8rem;
 }
+.remark{
+	color: #F65D45;
+	font-size: 0.8rem;
+}
 .image_coun {
 	width: 100%;
 	max-height: 90px;
-}
-.type_project .back{
-	width: 50px;
-	border: none;
-	background: none;
-	position: absolute;
-	top: 165px;
-	left: -50px;
-	opacity: 0.5;
-}
-.type_project .back img{
-	width: 100%;
-}
-.type_project .next{
-	width: 50px;
-	border: none;
-	background: none;
-	position: absolute;
-	top: 165px;
-	right: -50px;
-	opacity: 0.5;
-}
-.type_project .next img{
-	width: 100%;
-}
-.type_project .btn_sl{
-	transition: 0.3s;
-}
-.type_project .btn_sl:hover{
-	opacity: 1;
-	transition: 0.3s;
-}
-.dots_country .slick-dots{
-	display: flex;
-	justify-content: center;
-	text-decoration: none;
-}
-.dots_country .slick-dots li{
-	margin: 10px 4px;
-}
-.slick-dots button{
-	width: 15px;
-	height: 15px;
-	border-radius: 10px;
-	border:none;
-	background-color: #fff;
-	opacity: 0.5;
-}
-.slick-dots button:focus{
-	opacity: 1;
-}
-.category_box .box_textr{
-	height: 30px;
-	font-weight: bold;
-} 
-.category_box .box_textr_detail{
-	height: 90px;
-	font-size: 0.8rem;
-} 
-.category_box .box_check{
-	width: 100%;
-	height: 160px;
-	position: absolute;
-	top: 0;
-	opacity: 0;
-	transition: 0.3s;
-}
-.category_box .box_check img{
-	width: 50px;
-	height: 50px;
-}
-.list_project .box_all .img{
-	width: 100%;
-	height: 410px;
-	overflow: hidden;
-}
-.list_project .box_all .img img{
-	width: 100%;
-}
-.list_project .box_all .text{
-	font-size: 1rem;
-	height: 150px;
-}
-.list_project .btn_vote{
-	padding: 5px 15px;
-	background-color: #ccc;
-	color: #fff;
-	border-radius: 20px;
-	text-align: center;
-	cursor: pointer;
-}
-.list_project .btn_vote.active , .list_project .btn_vote:hover{
-	background-color: #2EA4CE;
-	transition: 0.3s;
-}
-.vote .left img{
-	width: 37px;
-	height: 37px;
-	cursor: pointer;
-}
-.scoring{
-	background-color: #fff;
-	color: #000;
-	overflow: hidden;
-}
-.scoring .line{
-	width: 100%;
-	border: 1px solid #ccc;
-	margin: 20px 0;
-}
-.scoring .bar_select .btn{
-	padding: 6px 30px;
-	background-color: #2EA4CE;
-	border-radius: 20px;
-	color: #fff;
-}
-.scoring_project{
-	background-color: #fff;
-	color: #000;
-	overflow: hidden;
-}
-.scoring_project .image{
-	width: 100%;
-	height: 410px;
-	overflow: hidden;
-}
-.scoring_project .image img{
-	width: 100%;
-	object-fit: cover;
-}
-.scoring_project .project_image .btn_preview{
-	width: 100%;
-	padding: 0 10px;
-	margin-top: -40px;
-}
-.scoring_project .project_image .btn_preview button{
-	width: 100%;
-	border-radius: 20px;
-	border:none;
-	color: #fff;
-	background-color: rgba(0,0,0,0.4);
-	transition: 0.3s;
-}
-.scoring_project .project_image .btn_preview button:hover{
-	background-color: #2EA4CE;
-	transition: 0.3s;
-}
-.scoring_project .bg_black{
-	background-color: rgba(0,0,0,0.8);
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-}
-.scoring_project .bg_black .box_preview{
-	width: 1024px;
-	height: 700px;
-}
-.box_preview .box_image_slid{
-	width: 100%;
-	height: 700px;
-	display: flex !important;
-	justify-content: center !important;
-	align-items: center !important;
-}
-.box_preview .box_image_slid img{
-	width: auto;
-	height: 100%;
-	object-fit: contain;
-}
-.box_preview .slick-dots button{
-	background-color: #fff;
-}
-.bg_black .close_preview{
-	position: absolute;
-	top: 20px;
-	right: 40px;
-	width: 30px;
-	height: 30px;
-	cursor: pointer;
-	opacity: 0.8;
-}
-.bg_black .close_preview:hover{
-	opacity: 1;
-	transition: 0.3s;
-}
-.bg_black .close_preview img{
-	width: 100%;
-}
-#table_list_project .list_project:hover{
-	background-color: rgba(46, 162, 204, 0.7);
-	color: #fff;
-	transition: 0.3s;
-	cursor: pointer;
-}
-.box_add_inventors .box_surname{
-	position: relative;
-}
-.box_add_inventors .box_surname .close_addmore{
-	position: absolute;
-    right: -40px;
-    top: 0;
-    width: 37px;
-    height: 37px;
-   	background-image: url('../image/icon/close_O.png');
-   	opacity: 0.5;
-}
-.box_add_inventors .box_surname .close_addmore:hover{
-	opacity: 1;
-	transition: 0.3s;
-	cursor: pointer;
-}
-.box_add_inventors .box_surname .close_addmore img{
-	width: 100%;
 }

@@ -280,86 +280,15 @@
 						<div class="col p-0 mt-4 mb-4 mx-auto">
 							<div class="line"></div>
 						</div>
-						<div class="row">
-							<div class="col-5 h5"><b>ยืนยันความเป็นเจ้าของผลงานสิ่งประดิษฐ์และนวัตกรรม</b>
-							</div>
-							<div class="col-12">
-								<pre class="term">     ข้าพเจ้าขอรับรองว่าผลงานสิ่งประดิษฐ์ที่เสนอเพื่อขอรับรางวัลโครงการ “Thailand New Gen Inventors Award” (I-New Gen Award) จากสำนักงานการวิจัย<br>แห่งชาติ (วช.) เป็นผลงานที่ข้าพเจ้าและคณะ ได้ทำการประดิษฐ์คิดค้นขึ้นเอง ไม่ได้นำผลงานของผู้อื่นมาทำซ้ำ ดัดแปลง หรือลอกเลียนแบบแต่อย่างใด<br><br>     ทั้งนี้ ข้าพเจ้าและคณะยินดียอมรับว่า ผลการตัดสินรางวัลของคณะกรรมการประเมินผลงานประดิษฐ์คิดค้น ในโครงการ “Thailand New Gen Inventors<br> Award” (I-New Gen Award) ถือเป็นที่สุด และหากพบในภายหลังว่าข้าพเจ้าและคณะได้มีการทำซ้ำ ดัดแปลง หรือลอกเลียนแบบผลงานสิ่งประดิษฐ์ของผู้อื่นหรือ<br>ดำเนินการใดที่ไม่สอดคล้องหรือต่างจากที่ได้รับรองไว้ข้างต้น ข้าพเจ้าและคณะยินยอมให้สำนักงานการวิจัยแห่งชาติ (วช.) เพิกถอนผลการตัดสินและเรียกคืน<br>รางวัลที่ได้รับทั้งหมด และยินดีรับผิดชอบแต่ฝ่ายเดียว ในความเสียหาย การร้องเรียน และการฟ้องร้องในคดีความต่าง ๆ ที่อาจเกิดขึ้นได้ทั้งสิ้น </pre>
-							</div>		
-						</div>
-						<div class="col-12 mx-auto mt-2">
-							<input type="checkbox" class="accept_check" id="accept_check">
-							<b for="accept_check " class="ml-3">ฉันได้อ่านและยอมรับข้อตกลงดังกล่าว</b>
-						</div>
-
-						<div class="col p-0 mt-4 mx-auto">
-							<div class="line"></div>
-						</div>
-						<div>
-							<span class="note">*ต้องกรอกให้ครบถ้วน</span>
-						</div>
 						<div class="row mb-5">
-							<div class="col-5 h5"></div>
-
-							<div class="form-row">
+							<div class="col-5"></div>
 								<div class="col-4">
-									<div class="btn_submit_invention btn_green btn_blue">ส่งผลงานเข้าประกวด</div>
+									<div class="btn_submit_invention btn_green btn_blue">บันทึก</div>
 								</div>
-								<div class="col-8">
-									<div class="note_save">
-										หลังจากได้รับอีเมลยืนยันการส่งผลงานแล้ว คุณจะสามารถแก้ไขข้อมูลผลงานได้ไม่จำกัดจำนวนครั้ง 
-										ในช่วงระยะเวลาที่กำหนด เพียงเข้าสู่ระบบและทำการแก้ไขได้ที่ “ส่งผลงาน”
-									</div>
 
-								</div>
+
 							</div>
 
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bg_black" style="display: none;">
-			<div class="survey">
-				<div class="row mt-5">
-					<div class="col-11 mx-auto text-left h3">แบบประเมินความพึงพอใจต่อการใช้งาน</div>
-					<div class="col-11 mx-auto note">กรุณาทำแบบสอบถามให้ครบถ้วน ขั้นตอนการส่งผลงานจึงจะสำเร็จเรียบร้อย
-						<div class="line mt-1"></div>
-
-					</div>
-				</div>
-				<div class="row mt-5">
-					<div class="col-11 mx-auto">
-						<div class="row">
-							<div class="col-6">
-								<label class="font-weight-bold" for="">1. คุณรู้สึกพึงพอใจต่อระบบการส่งผลงานเข้าประกวดมากน้อยเพียงใด?*</label>
-								<select class="form-control input_data">
-									<option selected>มากที่สุด</option>
-									<option>...</option>
-								</select>
-							</div>
-						</div>
-						<div class="row mt-3">
-							<div class="col-6">
-								<label class="font-weight-bold" for="">2. คุณได้รับความสะดวกจากระบบมากน้อยเพียงใด?*</label>
-								<select class="form-control input_data">
-									<option selected>มาก</option>
-									<option>...</option>
-								</select>
-							</div>
-						</div>
-						<div class="row mt-3">
-							<div class="col-12">
-								<label class="font-weight-bold" for="">3. คุณมีคำแนะนำติชมอื่นๆหรือไม่?</label>
-								<textarea class="form-control input_data" style="height: 200px;"></textarea>
-								<span class="note">*ต้องกรอกให้ครบถ้วน</span>
-							</div>
-
-						</div>
-						<div class="row mt-5 mb-5">
-							<div class="col-3 mx-auto">
-								<div class="btn_green btn_complete">ส่งคำตอบ</div>
-							</div>
 						</div>
 					</div>
 				</div>
